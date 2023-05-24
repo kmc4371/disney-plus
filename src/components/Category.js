@@ -46,11 +46,11 @@ const Container = styled.div`
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(5, 1fr);
-  
+
   @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns : repeat(1, 1fr);
   }
-`
+`;
 
 const Wrap = styled.div`
   padding-top: 56.25%;

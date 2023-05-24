@@ -10,8 +10,8 @@ const Banner = () => {
   const [isClicked, setIsClicked] = useState(false)
 
   useEffect(() => {
-    fetchData()
-  }, []);
+    fetchData();
+  }, [])
 
   const fetchData = async () => {
     //현재 상영중인 영화 정보 가져 오기(여러 영화)
@@ -61,7 +61,7 @@ const Banner = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className='banner__contents'>
+        <div style={{ fontSize: 10 }} className='banner__contents'>
           <h1 className='banner__title'>
             {movie.title || movie.name || movie.original_name}
           </h1>
